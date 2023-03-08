@@ -19,7 +19,7 @@ let team = [
 
     {
         name: 'Angela Lopez',
-        title: 'social Media Manager',
+        title: 'Social Media Manager',
         profile: 'angela-lopez-social-media-manager.jpg',
     },
 
@@ -36,28 +36,49 @@ let team = [
     }
 ]
 
-for(let stamp in team){
-    console.log(team[stamp]['name'])
-    console.log(team[stamp]['title'])
-    console.log(team[stamp]['profile'])
+// --------------------------MILESTONE----------------------------
+
+// for(let stamp in team){
+//     console.log(team[stamp]['name'])
+//     console.log(team[stamp]['title'])
+//     console.log(team[stamp]['profile'])
 
 
 
+// }
+
+// let nomeEl = document.querySelectorAll('.nome');
+// let roleEl = document.querySelectorAll('.role')
+// let imageEl = document.querySelectorAll('.image')
+
+
+
+//     for(i = 0; i < 6; i++){
+
+//         nomeEl[i].innerHTML = team[i].name;
+//         roleEl[i].innerHTML = team[i].title;
+//         imageEl[i].innerHTML = team[i].profile;
+
+
+//     }
+
+
+// -------------------------------BONUS--------------------------------------
+
+let cardImageEl = document.querySelectorAll('.card-image');
+let nameEl = document.querySelectorAll('.name');
+let roleEl = document.querySelectorAll('.role');
+
+
+
+for( i = 0; i < 6; i++){
+    let newImage = document.createElement('img');
+
+    cardImageEl[i].append(newImage);
+
+    newImage.src = `img/${team[i].profile}`;
+
+    nameEl[i].innerHTML = team[i].name
+    roleEl[i].innerHTML = team[i].title 
+    
 }
-
-let nomeEl = document.querySelectorAll('.nome');
-let roleEl = document.querySelectorAll('.role')
-let imageEl = document.querySelectorAll('.image')
-
-
-
-    for(i = 0; i < 6; i++){
-
-        nomeEl[i].innerHTML = team[i].name;
-        roleEl[i].innerHTML = team[i].title;
-        imageEl[i].innerHTML = team[i].profile;
-
-
-    }
-
-
