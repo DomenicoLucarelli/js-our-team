@@ -44,3 +44,20 @@ for(let stamp in team){
 
 
 }
+
+let nomeEl = document.querySelectorAll('.nome');
+let roleEl = document.querySelectorAll('.role')
+let imageEl = document.querySelectorAll('.image')
+
+
+
+    for(i = 0; i < 6; i++){
+
+        nomeEl[i].innerHTML = team[i].name;
+        roleEl[i].innerHTML = team[i].title;
+        imageEl[i].innerHTML = team[i].profile;
+
+
+    }
+
+
