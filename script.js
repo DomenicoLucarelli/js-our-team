@@ -37,14 +37,11 @@ let team = [
 ]
 
 // --------------------------MILESTONE----------------------------
+// for(i=0 ; i < team.length; i++){
 
-// for(let stamp in team){
-//     console.log(team[stamp]['name'])
-//     console.log(team[stamp]['title'])
-//     console.log(team[stamp]['profile'])
-
-
-
+//     for(let stamp in team[i]){
+//         console.log(`${[stamp]}: ${team[i][stamp]}`)
+//     }
 // }
 
 // let nomeEl = document.querySelectorAll('.nome');
